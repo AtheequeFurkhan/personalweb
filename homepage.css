@@ -1,0 +1,543 @@
+
+/* hero and bg */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+.hero-content {
+    line-height: 2.5;
+}
+
+.hero .hero-title {
+    text-align: center;
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 100px;
+    color: rgb(240, 236, 229);
+    margin-top: 100px;
+    }
+
+.hero .hero-subtitle {
+    line-height: 1.2;
+    width: 80%;
+    color: #F2F1EF;
+    margin: 0 auto 30px;
+    font-family: "poiret-one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+        }
+
+.hero .hero-button {
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: rgb(182, 187, 196);
+    color: rgb(49,48, 77);
+    transition: all 0.4s ease-in-out;
+}
+
+.hero .hero-button:hover {
+    background-color:rgb(240, 236, 229);
+    border-radius: 20px;
+
+}
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+  }
+
+/* CONTENT */
+
+/*Targets and indicators*/
+.content .container {
+    background-color: rgb(240, 236, 229);
+    padding: 50px 75px 50px 75px;
+    box-shadow:0 3px 10px rgba(137, 136, 142, 0.988); ;
+    margin: 90px 90px;
+    border-radius: 20px;
+
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    color: #31304D;
+    text-align: center;
+}
+
+.content i {
+    margin-right: 10px;
+}
+
+.content h2:hover {
+    cursor: default;
+    color: #B6BBC4;
+}
+
+.content h2:hover span {
+    color: var(--green);
+}
+
+.content .row {
+    content: center;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    column-gap: 150px;
+    row-gap: 80px;
+}
+
+.content .card {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    padding: 30px 0;
+    box-shadow:  0 2px 2px #312f36;
+    background-color: #B6BBC4;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.content .card:hover {
+    transform: scale(1.1);
+}
+
+.content .card img {
+    border-radius: 4px;
+}
+
+.content .card h3 {
+    margin: 15px 0;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:25px;
+    color: #31304D;
+}
+
+.content .card a, i {
+    color: rgb(240, 236, 229);
+    font-family: "poiret-one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.content .card a:hover,
+.content .card i:hover {
+    color: rgb(49,48, 77);
+}
+
+/*Student Details*/
+
+.content .student-details {
+    background-image: url(img/teamwork.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    background-position: 100%;
+    padding: 60px 0;
+}
+
+.content .student-details .student-details-content {
+    padding: 0 200px;
+    text-align: center;
+}
+
+.content .student-details .student-details-content h2 {
+    color: rgb(240, 236, 229);
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.content .student-details .student-details-content p {
+    line-height: 2;
+    color: #B6BBC4;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:30px;
+}
+
+.content .student-details .student-details-content .student-details-btn {
+    margin-top: 60px;
+}
+
+.content .student-details .student-details-content .student-details-btn a {
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: rgb(182, 187, 196);
+    color: #31304D;
+    transition: all 0.4s ease-in-out;
+}
+
+.content .student-details .student-details-content .student-details-btn a:hover {
+    background-color: rgb(240, 236, 229);
+    border-radius: 15px;
+}
+
+.content .sitemap {
+    background: rgb(182, 187, 196);
+    padding: 50px 0;
+}
+
+.content .sitemap .sitemap-content {
+    padding: 0 200px;
+    text-align: center;
+}
+.content .sitemap .sitemap-content h2 {
+    color: rgb(240, 236, 229);
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.content .sitemap .sitemap-content p {
+    margin-top: 10px;
+    line-height: 2;
+    color: #31304D;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:30px;
+}
+
+.content .sitemap .sitemap-content .sitemap-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.content .sitemap .sitemap-content .sitemap-btn a {
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: #31304D;
+    color: #B6BBC4;
+    transition: all 0.4s ease-in-out;
+}
+
+.content .sitemap .sitemap-content .sitemap-btn a:hover {
+    background-color: rgb(240, 236, 229);
+    border-radius: 20px;
+}
+.content .sitemap .sitemap-content img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.content .sitemap .sitemap-content img:hover{
+    transform: scale(1.05);
+}
+
+.content .gallery {
+    
+    background:rgb(240, 236, 229) ;
+    padding: 50px 0;
+}
+
+.content .gallery .gallery-content {
+    padding: 0 200px;
+    text-align: center;
+}
+
+.content .gallery .gallery-content h2 {
+    color: #31304D;
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.content .gallery .gallery-content p {
+    margin-top: 10px;
+    line-height: 2;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:30px;
+}
+
+.content .gallery .gallery-content .gallery-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.content .gallery .gallery-content .gallery-btn a {
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: #31304D;
+    color: #B6BBC4;
+    transition: all 0.4s ease-in-out;
+}
+
+.content .gallery .gallery-content .gallery-btn a:hover {
+    background-color:#161A30;
+    border-radius: 20px;
+}
+.content .gallery .gallery-content img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.content .gallery .gallery-content img:hover{
+    transform: scale(1.05);
+}
+
+#animContainer {
+    width: 10%;
+    height: 10%;
+  }
+  
+  .container_mission{
+    color: #31304D;
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .container_mission_content{
+    text-align: center;
+    font-family: "poiret-one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
+
+  
+
+  .container_events h2{
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:60px;
+    margin-bottom: 60px;
+
+  }
+  .content .container_events {
+    background-color: rgb(240, 236, 229);
+    padding: 50px 75px 50px 75px;
+    box-shadow:0 3px 10px rgba(137, 136, 142, 0.988); ;
+    margin: 90px 90px;
+    border-radius: 20px;
+
+}
+
+.content .row_events {
+    content: center;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    column-gap: 150px;
+    row-gap: 80px;
+}
+
+.content .card_events {
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(49,48, 77);
+    text-align: center;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    padding: 30px 0;
+    box-shadow:  0 2px 2px #312f36;
+    background-color: #B6BBC4;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.content .card_events:hover {
+    transform: scale(1.1);
+}
+
+.content .card_events h4 {
+    margin: 15px 0;
+    font-family: "poiret-one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.content .card_events a, i {
+    color: var(--text-color);
+}
+
+.content .card_events a:hover,
+.content .card_events i:hover {
+    color: var(--g);
+}
+
+
+
+.anim{
+    position: center;
+    margin:0;
+    padding:10px 0 0 0;
+    
+}
+
+
+/**
+ * Join Us
+ */
+.content .join {
+    background: #B6BBC4;
+    padding: 50px 0;
+    align-items: center;
+}
+
+.content .join .join-content {
+    padding: 0 200px;
+    text-align: center;
+}
+
+.content .join .join-content p {
+    margin-top: 10px;
+    line-height: 2;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:30px;
+}
+
+.content .join .join-content .join-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.content .join .join-content .join-btn a {
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: #31304D;
+    color: #B6BBC4;
+    transition: all 0.4s ease-in-out;
+}
+
+.content .join .join-content .join-btn a:hover {
+    background-color: rgb(240, 236, 229);
+    border-radius: 20px;
+}
+.content .join .join-content img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.content .join .join-content img:hover{
+    transform: scale(1.05);
+}
+
+/** Shop Us*/
+.content .shop {
+    background: #B6BBC4;
+    padding: 50px 0;
+}
+
+.content .shop .shop-content {
+    padding: 0 200px;
+    text-align: center;
+}
+
+.content .shop .shop-content h2 {
+    color: #31304D;
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.content .shop .shop-content p {
+    margin-top: 10px;
+    line-height: 2;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.content .shop .shop-content .shop-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.content .shop .shop-content .shop-btn a {
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:20px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: #31304D;
+    color: #B6BBC4;
+    transition: all 0.4s ease-in-out;
+}
+
+.content .shop .shop-content .shop-btn a:hover {
+    background-color: rgb(240, 236, 229);
+    border-radius: 20px;
+}
+
+.content .shop .shop-content img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.content .shop .shop-content img:hover {
+    transform: scale(1.05);
+}
+
+
